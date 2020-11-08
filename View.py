@@ -263,9 +263,9 @@ class view:
 
         except Exception as ex:
             messagebox.showerror("DB Error!"," ex")
-            self.Button9.config(ststus="disabled")
-            self.Button10.config(ststus="disabled")
-            self.Button11.config(ststus="disabled")
+            self.Button9.config(state="disabled")
+            self.Button10.config(state="disabled")
+            self.Button11.config(state="disabled")
 
         self.vol_scale.config(from_=0,to=100,command=self.change_volume)
         self.vol_scale.set(50) # just  after this line, method "change_volume" is called
